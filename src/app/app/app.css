@@ -1,0 +1,25 @@
+body
+{
+   margin: 0;
+}
+
+.app-container
+{
+   position: relative;
+}
+
+.app-content
+{
+   position: relative;
+   z-index: 100;
+}
+
+.app-background
+{
+   top: 0;
+   left: 0;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   z-index: -100;
+}
