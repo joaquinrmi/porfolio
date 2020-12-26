@@ -1,6 +1,7 @@
 body
 {
    margin: 0;
+   font-family: 'Poppins', sans-serif;
 }
 
 .app-container
@@ -22,4 +23,60 @@ body
    width: 100vw;
    height: 100vh;
    z-index: -100;
+}
+
+.landing
+{
+   width: 100vw;
+   height: 100vh;
+}
+
+.table
+{
+   display: table;
+}
+
+.cell
+{
+   display: table-cell;
+}
+
+.vertical-center
+{
+   vertical-align: middle;
+}
+
+.color0
+{
+   color: rgb(220, 50, 80);
+}
+
+.color1
+{
+   color: rgb(170, 170, 185);
+}
+
+.header
+{
+   text-align: center;
+   box-sizing: border-box;
+   padding: 2em;
+   min-height: auto;
+}
+
+.title-container
+{
+   padding-bottom: 2em;
+}
+
+.header-title
+{
+   font-size: 46px;
+   color: rgb(200, 200, 200);
+   margin: 0;
+}
+
+.header-description
+{
+   font-size: 22px;
 }

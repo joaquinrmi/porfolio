@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import AliveCode from "../../alive_code/";
-import TextToken from "../../alive_code/text_token";
+import codeLines from "./code";
 
 import "./app.css";
 
@@ -14,19 +14,7 @@ function App()
       if(!initialized)
       {
          aliveCode.setContainer(document.getElementById("animated-code-container"));
-         aliveCode.lines = [
-            [
-               new TextToken("//", 0, 1),
-               new TextToken(" Código de prueba", 0, 0)
-            ],
-            [
-               new TextToken("var", 4, 1, true),
-               new TextToken(" message", 1, 1),
-               new TextToken(" =", 2, 2),
-               new TextToken(" \"Hello World!\"", 3, 3),
-               new TextToken(";", 1, 1)
-            ]
-         ];
+         aliveCode.lines = codeLines;
          aliveCode.colorPalette = [
             "rgb(64,76,100)",
             "rgb(200,200,200)",
@@ -44,7 +32,16 @@ function App()
    });
 
    return <div className="app-container">
-      <div className="app-content"></div>
+      <div className="app-content">
+         <div className="header table landing">
+            <div className="title-container cell vertical-center">
+               <h1 className="header-title">
+                  <span className="color0">J</span>OAQUIN <span className="color0">R</span>UAIMI
+               </h1>
+               <p className="header-description color1">Desarrollador web full stack y C++ entusiasta.</p>
+            </div>
+         </div>
+      </div>
 
       <div className="app-background" id="animated-code-container"></div>
    </div>;
