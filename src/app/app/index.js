@@ -4,6 +4,7 @@ import AliveCode from "../../alive_code/";
 import codeLines from "./code";
 
 import "./app.css";
+import Project from "../components/project/project";
 
 function App()
 {
@@ -45,8 +46,27 @@ function App()
             </div>
          </div>
 
-         <div className="content-section">
-            
+         <div className="content-section project-container">
+            <Project
+               title="Blog Sample"
+               description="Ejemplo de blog desarrollado con el stack MERN."
+               img="https://user-images.githubusercontent.com/28006144/101951808-5cbf1980-3bd6-11eb-9a9c-c65414c50a05.png"
+            />
+            <Project
+               title="JSON"
+               description="Implementación de JSON en C++."
+               img="https://user-images.githubusercontent.com/28006144/103159815-b87bcc00-47ac-11eb-9fca-c29ec4fd1984.png"
+            />
+            <Project
+               title="Language"
+               description="Librería para definir y trabajar con lenguajes en C++."
+               img="https://user-images.githubusercontent.com/28006144/103160068-7902af00-47af-11eb-99e0-ffe77c7bfc97.png"
+            />
+            <Project
+               title="Animated Score"
+               description="Partitura musical animada en <canvas>."
+               img="https://user-images.githubusercontent.com/28006144/103160110-ea426200-47af-11eb-8d9c-387ad7b70e06.png"
+            />
          </div>
       </div>
 
