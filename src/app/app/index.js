@@ -14,6 +14,7 @@ function App()
       if(!initialized)
       {
          aliveCode.setContainer(document.getElementById("animated-code-container"));
+         aliveCode.setSize(window.screen.width, window.screen.height);
          aliveCode.lines = codeLines;
          aliveCode.colorPalette = [
             "rgb(64,76,100)",
@@ -22,6 +23,8 @@ function App()
             "rgb(34,154,138)",
             "rgb(175,110,175)",
          ];
+         aliveCode.setFontFamily("'Inconsolata'");
+         aliveCode.setFontSize(16);
 
          setInitialized(true);
       }
@@ -40,6 +43,10 @@ function App()
                </h1>
                <p className="header-description color1">Desarrollador web full stack y C++ entusiasta.</p>
             </div>
+         </div>
+
+         <div className="content-section">
+            
          </div>
       </div>
 

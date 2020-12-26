@@ -12,7 +12,16 @@ const codeLines = [
       new TextToken(" =", 2, 2),
       new TextToken(" \"Hello World!\"", 3, 3),
       new TextToken(";", 1, 1)
-   ]
+   ],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
 ];
 
 export default codeLines;
