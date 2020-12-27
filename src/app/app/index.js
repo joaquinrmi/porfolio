@@ -23,7 +23,7 @@ function App()
          aliveCode.colorPalette = colorPalette;
          aliveCode.setFontFamily("'Inconsolata'");
          aliveCode.setFontSize(16);
-         aliveCode.setVelocity(20);
+         aliveCode.setVelocity(15);
 
          setInitialized(true);
       }
