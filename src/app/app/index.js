@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 
 import AliveCode from "../../alive_code/";
 import codeLines from "./code";
-import Project from "../components/project/project";
+import colorPalette from "./color_palette";
+import Project from "../components/project/";
 
 import "./app.css";
 import GITHUB_LOGO32 from "../../res/img/github32-light.png";
@@ -18,15 +19,10 @@ function App()
          aliveCode.setContainer(document.getElementById("animated-code-container"));
          aliveCode.setSize(window.screen.width, window.screen.height);
          aliveCode.lines = codeLines;
-         aliveCode.colorPalette = [
-            "rgb(64,76,100)",
-            "rgb(200,200,200)",
-            "rgb(236,116,84)",
-            "rgb(34,154,138)",
-            "rgb(175,110,175)",
-         ];
+         aliveCode.colorPalette = colorPalette;
          aliveCode.setFontFamily("'Inconsolata'");
          aliveCode.setFontSize(16);
+         aliveCode.setVelocity(20);
 
          setInitialized(true);
       }
@@ -43,7 +39,9 @@ function App()
                <h1 className="header-title">
                   <span className="color0">J</span>OAQUIN <span className="color0">R</span>UAIMI
                </h1>
+
                <p className="header-description color1">Desarrollador web full stack y C++ entusiasta.</p>
+
                <div className="center-text">
                   <a href="https://github.com/joaquinrmi" target="_blank">
                      <img src={GITHUB_LOGO32} />
