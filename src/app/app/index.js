@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import AliveCode from "../../alive_code/";
 import codeLines from "./code";
 import colorPalette from "./color_palette";
+
 import Project from "../components/project/";
 
 import "./app.css";

@@ -75,25 +75,30 @@ const codeLines = [
       reserved(`import`),
       className(` AliveCode`),
       reserved(` from`),
-      stringToken(` "../../alive_code/"`)
+      stringToken(` "../../alive_code/"`),
+      symbol(`;`)
    ]),
    new CodeLine(0, [
       reserved(`import`),
       variable(` codeLines`),
       reserved(` from`),
-      stringToken(` "./code"`)
+      stringToken(` "./code"`),
+      symbol(`;`)
    ]),
    new CodeLine(0, [
       reserved(`import`),
       variable(` colorPalette`),
       reserved(` from`),
-      stringToken(` "./color_palette"`)
+      stringToken(` "./color_palette"`),
+      symbol(`;`)
    ]),
+   new CodeLine(0, []),
    new CodeLine(0, [
       reserved(`import`),
       className(` Project`),
       reserved(` from`),
-      stringToken(` "../components/project/"`)
+      stringToken(` "../components/project/"`),
+      symbol(`;`)
    ]),
    new CodeLine(0, []),
    new CodeLine(0, [
@@ -260,13 +265,5 @@ const codeLines = [
       symbol(`});`)
    ]),
 ];
-
-/*
-   aliveCode.colorPalette = colorPalette;
-   aliveCode.setFontFamily("'Inconsolata'");
-   aliveCode.setFontSize(16);
-
-   setInitialized(true);
-*/
 
 export default codeLines;
