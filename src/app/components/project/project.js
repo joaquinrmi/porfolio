@@ -5,11 +5,18 @@ import GITHUB_LOGO64 from "../../../res/img/github64-light.png";
 const LANGUAGE = {
    "cpp": {
       value: "C++",
-      color: "rgb(243, 75, 125)"
+      color: "rgb(243, 75, 125)",
+      textColor: "#000"
    },
    "js": {
       value: "JavaScript",
-      color: "rgb(247, 221, 30)"
+      color: "rgb(247, 221, 30)",
+      textColor: "#000"
+   },
+   "ts": {
+      value: "TypeScript",
+      color: "rgb(43, 116, 137)",
+      textColor: "#fff"
    }
 };
 
@@ -38,6 +45,7 @@ function Project(props)
             <span style={{
                padding: "5px 10px",
                backgroundColor: LANGUAGE[props.language].color,
+               color: LANGUAGE[props.language].textColor,
                userSelect: "none"
             }}>
                {LANGUAGE[props.language].value}

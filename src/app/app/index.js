@@ -41,7 +41,7 @@ function App()
                   <span className="color0">J</span>OAQUIN <span className="color0">R</span>UAIMI
                </h1>
 
-               <p className="header-description color1">Desarrollador web full stack y C++ entusiasta.</p>
+               <p className="header-description color1">Desarrollador web full stack.</p>
 
                <div className="center-text">
                   <a href="https://github.com/joaquinrmi" target="_blank">
@@ -54,19 +54,37 @@ function App()
          <div className="content-section">
             <div className="project-container">
                <Project
+                  title="Sparrow"
+                  language="ts"
+                  description="Una copia barata de twitter desarrollada con el stack MERN."
+                  img="https://res.cloudinary.com/dyisdzj91/image/upload/v1618426329/Sparrow_1_wzsdd4.png"
+                  link="https://github.com/joaquinrmi/sparrow"
+               />
+
+               <Project
+                  title="Universal Blog"
+                  language="ts"
+                  description={`Servidor "universal" para blogs desarrollado con Node.js y PostgreSQL.`}
+                  img="https://user-images.githubusercontent.com/28006144/114746149-c9cdf180-9d25-11eb-8fbe-dd39e14802c7.png"
+                  link="https://github.com/joaquinrmi/universal-blog"
+               />
+
+               <Project
+                  title="JSON"
+                  language="cpp"
+                  description="Implementación de JSON en C++."
+                  img="https://res.cloudinary.com/dyisdzj91/image/upload/v1618427837/JSON_logo_ogccna.png"
+                  link="https://github.com/joaquinrmi/JSON"
+               />
+
+               <Project
                   title="Blog Sample"
                   language="js"
                   description="Ejemplo de blog desarrollado con el stack MERN."
                   img="https://user-images.githubusercontent.com/28006144/101951808-5cbf1980-3bd6-11eb-9a9c-c65414c50a05.png"
                   link="https://github.com/joaquinrmi/blog-sample"
                />
-               <Project
-                  title="JSON"
-                  language="cpp"
-                  description="Implementación de JSON en C++."
-                  img="https://user-images.githubusercontent.com/28006144/103159815-b87bcc00-47ac-11eb-9fca-c29ec4fd1984.png"
-                  link="https://github.com/joaquinrmi/JSON"
-               />
+
                <Project
                   title="Language"
                   language="cpp"
@@ -74,6 +92,7 @@ function App()
                   img="https://user-images.githubusercontent.com/28006144/103160068-7902af00-47af-11eb-99e0-ffe77c7bfc97.png"
                   link="https://github.com/joaquinrmi/language"
                />
+
                <Project
                   title="Animated Score"
                   language="js"
