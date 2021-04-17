@@ -84,22 +84,6 @@ function App()
                   img="https://user-images.githubusercontent.com/28006144/101951808-5cbf1980-3bd6-11eb-9a9c-c65414c50a05.png"
                   link="https://github.com/joaquinrmi/blog-sample"
                />
-
-               <Project
-                  title="Language"
-                  language="cpp"
-                  description="Librería para definir y trabajar con lenguajes en C++."
-                  img="https://user-images.githubusercontent.com/28006144/103160068-7902af00-47af-11eb-99e0-ffe77c7bfc97.png"
-                  link="https://github.com/joaquinrmi/language"
-               />
-
-               <Project
-                  title="Animated Score"
-                  language="js"
-                  description="Partitura musical animada en <canvas>."
-                  img="https://user-images.githubusercontent.com/28006144/103160110-ea426200-47af-11eb-8d9c-387ad7b70e06.png"
-                  link="https://github.com/joaquinrmi/animated-score"
-               />
             </div>
          </div>
       </div>
